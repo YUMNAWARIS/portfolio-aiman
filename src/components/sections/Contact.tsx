@@ -13,12 +13,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import CheckIcon from "@mui/icons-material/Check";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import LanguageIcon from "@mui/icons-material/Language";
-import ArticleIcon from "@mui/icons-material/Article";
-import SchoolIcon from "@mui/icons-material/School";
 
 export default function Contact() {
   const [copied, setCopied] = React.useState<null | "email" | "phone">(null);
@@ -27,13 +22,7 @@ export default function Contact() {
   const phone = "+92 331 2080656";
 
   const socials = [
-    // { name: "GitHub", url: "https://github.com/yumnawaris", icon: GitHubIcon },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/aiman-siddiqui-208b31243/", icon: LinkedInIcon },
-    // { name: "X / Twitter", url: "https://x.com/waris_yumna", icon: TwitterIcon },
-    // { name: "Medium", url: "https://medium.com/@yumnaahwaris", icon: ArticleIcon },
-    // { name: "Coursera", url: "https://www.coursera.org/user/85a7da3566159e08061efacef9258118", icon: SchoolIcon },
-    // { name: "Udemy", url: "https://www.udemy.com/user/yumna-waris/", icon: SchoolIcon },
-    { name: "Website", url: "https://aimansiddiqui.github.io/aiman-portfolio", icon: LanguageIcon },
   ] as const;
 
   const copy = async (text: string, key: "email" | "phone") => {

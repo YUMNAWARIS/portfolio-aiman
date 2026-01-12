@@ -1,19 +1,10 @@
-/* eslint-disable react/jsx-key */
 "use client";
 
 import React from "react";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
-import Stack from "@mui/material/Stack";
-import Chip, { ChipProps } from "@mui/material/Chip";
-
-type Activity = {
-  name: string;
-  description?: string;
-  image?: string;
-};
+import ActivityCard, { Activity } from "@/components/ActivityCard";
 
 const activities: Activity[] = [
   {
@@ -31,61 +22,6 @@ const activities: Activity[] = [
     image: "/activities/lab-work-2.jpeg",
   },
 ];
-
-function ActivityCard({ a }: { a: Activity }) {
-  return (
-    <Paper
-      variant="outlined"
-      sx={{
-        height: "100%",
-        overflow: "hidden",
-        bgcolor: "background.paper",
-        borderRadius: 2,
-      }}
-    >
-      {/* Image banner */}
-      <Box sx={{ position: "relative" }}>
-        <Box
-          component="img"
-          src={a.image || "/window.svg"}
-          alt={a.name}
-          sx={{
-            width: "100%",
-            height: 300,
-            objectFit: "cover",
-            display: "block",
-            bgcolor: "action.hover",
-          }}
-        />
-      </Box>
-
-      {/* Body */}
-      <Box sx={{ p: 2.5 }}>
-        <Stack spacing={1}>
-          <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
-            {a.name}
-          </Typography>
-          <Typography variant="body2" sx={{ color: "text.secondary" }}>
-          </Typography>
-          {a.description && (
-            <Typography
-              variant="body2"
-              sx={{
-                color: "text.secondary",
-                display: "-webkit-box",
-                WebkitLineClamp: 5,
-                WebkitBoxOrient: "vertical",
-                overflow: "hidden",
-              }}
-            >
-              {a.description}
-            </Typography>
-          )}
-        </Stack>
-      </Box>
-    </Paper>
-  );
-}
 
 export default function ActivitiesPage() {
   return (
@@ -111,8 +47,8 @@ export default function ActivitiesPage() {
             },
           }}
         >
-          {activities.map((a) => (
-            <ActivityCard a={a} />
+          {activities.map((activity) => (
+            <ActivityCard key={activity.name} activity={activity} />
           ))}
         </Box>
       </Container>

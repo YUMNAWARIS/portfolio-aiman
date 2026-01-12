@@ -47,7 +47,10 @@ export default function Timeline() {
       // subtitle:
       //   "Santa Monica, United States · Financial and insurance activities · Engineering",
       details: [
-        "Worked in the R&D department of the Masterbatch division, supporting development of premium masterbatches for food packaging, fire retardant applications, colorants, and barrier enhancement solutions based on customer specifications. Gained hands-on experience with thermoplastics, rigid and specialty plastics, and polymer additive systems. Actively involved in cross-functional projects focused on improving product performance and quality. Performed material characterization and quality testing including Melt Flow Index (MFI), tensile testing, and moisture content analysis to support formulation optimization and production readiness.",
+        "Worked in the R&D department of the Masterbatch division, supporting development of premium masterbatches for food packaging, fire retardant applications, colorants, and barrier enhancement solutions based on customer specifications.",
+        "Gained hands-on experience with thermoplastics, rigid and specialty plastics, and polymer additive systems.",
+        "Actively involved in cross-functional projects focused on improving product performance and quality.",
+        "Performed material characterization and quality testing including Melt Flow Index (MFI), tensile testing, and moisture content analysis to support formulation optimization and production readiness.",
       ],
     },
     {
@@ -57,7 +60,10 @@ export default function Timeline() {
       // subtitle:
       //   "Santa Monica, United States · Financial and insurance activities · Engineering",
       details: [
-        "Gained hands-on exposure to large-scale polymer and chemical manufacturing operations, with a focus on production processes, R&D support, and process optimization. Worked closely with production and technical teams to understand end-to-end chemical processing, operational controls, and quality parameters. Reviewed and analyzed plant performance data and operational reports to assess process efficiency, system stability, and production trends. Developed a foundational understanding of industrial chemical processes, equipment functionality, and data-driven decision-making within a petrochemical manufacturing environment."
+        "Gained hands-on exposure to large-scale polymer and chemical manufacturing operations, with a focus on production processes, R&D support, and process optimization.",
+        "Worked closely with production and technical teams to understand end-to-end chemical processing, operational controls, and quality parameters.",
+        "Reviewed and analyzed plant performance data and operational reports to assess process efficiency, system stability, and production trends.",
+        "Developed a foundational understanding of industrial chemical processes, equipment functionality, and data-driven decision-making within a petrochemical manufacturing environment.",
       ],
     },
     {
@@ -65,7 +71,7 @@ export default function Timeline() {
       date: "2019 - 2023",
       title: "Bachelor of Engineering – Polymer and Petrochemical Engineering",
       subtitle: "NED University of Engineering and Technology, Karachi, Pakistan",
-      details: ["Final Grade: 3.66 (EQF Level 6)"],
+      details: ["Final Grade: 3.31"],
     },
   ];
 
@@ -142,9 +148,24 @@ export default function Timeline() {
                         </Typography>
                       )}
                       {item.details && item.details.length > 0 && (
-                        <Stack component="ul" sx={{ m: 0, color: "text.secondary" }} gap={0.75}>
+                        <Stack
+                          component="ul"
+                          sx={{
+                            m: 0,
+                            pl: 2,
+                            color: "text.secondary",
+                            listStyleType: "disc",
+                            listStylePosition: "outside",
+                          }}
+                          gap={0.75}
+                        >
                           {item.details.map((d, i) => (
-                            <Typography key={i} component="li" variant="body2">
+                            <Typography
+                              key={i}
+                              component="li"
+                              variant="body2"
+                              sx={{ display: "list-item", listStyleType: "inherit" }}
+                            >
                               {d}
                             </Typography>
                           ))}

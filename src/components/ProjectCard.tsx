@@ -23,7 +23,12 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <Card variant="outlined" sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
       {project.image ? (
-        <CardMedia sx={{ height: 300 }} image={project.image} title={project.title} />
+        <CardMedia
+          component="img"
+          image={project.image}
+          alt={project.title}
+          sx={{ height: 300, objectFit: "contain", backgroundColor: "background.default" }}
+        />
       ) : null}
       <CardContent sx={{ flexGrow: 1 }}>
         <Typography gutterBottom variant="h6" component="div">
