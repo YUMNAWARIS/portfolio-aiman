@@ -26,26 +26,20 @@ export default function Timeline() {
   }> = [
     {
       type: "work",
-      date: "May, 2024 — November, 2025",
+      date: "May 2024 – November 2025",
       title: "Junior Manager - Unilever",
-      // subtitle:
-      //   "Santa Monica, United States · Financial and insurance activities · Engineering",
       details: [
-        "Leading packaging R&D for the Home Care portfolio (Surf Excel, Vim, Domex, Sunlight, Comfort)",
-        "covering flexible, rigid, and corrugated packaging formats. Responsible for driving sustainability",
-        "innovation, and cost optimization through material trials, supplier development, and value engineering",
-        "initiatives. Manage end-to-end artwork and SKU development, ensuring regulatory compliance, specification",
-        "accuracy, and on-time market launches. Ensure continuous commercial packaging availability for base business",
-        "and consumer promotions while localizing packaging materials in line with global standards. Collaborate closely",
-        "with regional R&D, supply chain, procurement, and marketing teams to deliver innovation pipelines and savings targets.",
+        "Lead packaging R&D across Surf Excel, Vim, Domex, Sunlight, and Comfort spanning flexible, rigid, and corrugated formats.",
+        "Drive sustainability, innovation, and cost optimization through material trials, supplier development, and value engineering.",
+        "Manage end-to-end artwork and SKU development to ensure regulatory compliance, accurate specs, and on-time launches.",
+        "Safeguard continuous packaging availability for base business and promotions while localizing materials to global standards.",
+        "Partner with regional R&D, supply chain, procurement, and marketing to deliver innovation pipelines and savings targets.",
       ],
     },
     {
       type: "work",
       date: "January 2024  - April 2024",
       title: "Management Trainee Officer - FAV Group of Companies",
-      // subtitle:
-      //   "Santa Monica, United States · Financial and insurance activities · Engineering",
       details: [
         "Worked in the R&D department of the Masterbatch division, supporting development of premium masterbatches for food packaging, fire retardant applications, colorants, and barrier enhancement solutions based on customer specifications.",
         "Gained hands-on experience with thermoplastics, rigid and specialty plastics, and polymer additive systems.",
@@ -57,8 +51,6 @@ export default function Timeline() {
       type: "work",
       date: "September 2022  - October 2022",
       title: "Production Internee - LOTTEE Chemicals Pakistan LTD",
-      // subtitle:
-      //   "Santa Monica, United States · Financial and insurance activities · Engineering",
       details: [
         "Gained hands-on exposure to large-scale polymer and chemical manufacturing operations, with a focus on production processes, R&D support, and process optimization.",
         "Worked closely with production and technical teams to understand end-to-end chemical processing, operational controls, and quality parameters.",
@@ -68,10 +60,22 @@ export default function Timeline() {
     },
     {
       type: "education",
-      date: "2019 - 2023",
+      date: "2019 – 2023",
       title: "Bachelor of Engineering – Polymer and Petrochemical Engineering",
       subtitle: "NED University of Engineering and Technology, Karachi, Pakistan",
       details: ["Final Grade: 3.31"],
+    },
+    {
+      type: "education",
+      date: "2018",
+      title: "Intermediate – Pre-Engineering",
+      subtitle: "B.A.M.M P.E.C.H.S Govt. Girls College, Karachi, Pakistan",
+    },
+    {
+      type: "education",
+      date: "2016",
+      title: "Matriculation – Science",
+      subtitle: "Programmer School, Karachi, Pakistan",
     },
   ];
 
