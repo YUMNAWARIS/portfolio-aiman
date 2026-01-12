@@ -36,6 +36,8 @@ const selectedWork: Project[] = [
     description:
       "Developed a web-based calculator using Python, JavaScript, HTML, and CSS to estimate sachet material weight based on PET/PE layer thickness, material density, and package dimensions. Integrated packaging science formulas to automate accurate weight calculations, supporting development efficiency and cost-saving analyses. The project enhanced practical understanding of density-to-weight relationships in flexible packaging and demonstrated the application of coding tools for engineering problem-solving.",
     image: "/selected-work/selectedWork4.png",
+    liveUrl: "https://yumnawaris.github.io/sachet-weight-calculator/",
+    repoUrl: "https://drive.google.com/drive/folders/0B7_H0nm9lgpwfjZtaE43aEtzNTdOa05hc0lQUVpqQ3d5M3lUbERWR0I5R0Z1bG1wX0N2WTQ?resourcekey=0-eRrAUVyxquH0N0CwVMGb7A",
   },
 ];
 
